@@ -1,4 +1,4 @@
-local OrionLib = loadstring(game:HttpGet(('https://pastebin.com/raw/WRUyYTdY')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Slendy V2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText ="SLENDY V2", IntroIcon = "rbxasset://7888350796"})
 
