@@ -49,6 +49,13 @@ local Section = Tab:AddSection({
 Name = <string> - The name of the section.
 ]]
 
+ Tab:AddButton({
+    Name = RODE DISCORD SERVER",
+    Callback = function()
+        setclipboard("https://discord.gg/dyHt2qbk")
+        toclipboard("https://discord.gg/dyHt2qbk")
+  end    
+})
 
 Tab:AddParagraph("WARNING","IF YOU GOT THIS SCRIPT OUTSIDE THE DISCORD SERVER,IT PROB STOLEN")
 
