@@ -57,8 +57,6 @@ Name = <string> - The name of the section.
   end    
 })
 
-Tab:AddParagraph("WARNING","IF YOU GOT THIS SCRIPT OUTSIDE THE DISCORD SERVER,IT PROB STOLEN")
-
 Dropdown:Set("Value")
 
 Tab:AddDropdown({
