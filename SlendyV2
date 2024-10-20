@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Slendy V2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText ="SLENDY V2", IntroIcon = "rbxasset://7888350796"})
+local Window = OrionLib:MakeWindow({Name = "Slendy V2", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest", IntroText = "SLENDY V2", IntroIcon = "rbxasset://7888350796"})
 
 --[[
 Name = <string> - The name of the UI.
@@ -49,40 +49,11 @@ local Section = Tab:AddSection({
 Name = <string> - The name of the section.
 ]]
 
- Tab:AddButton({
-    Name = RODE DISCORD SERVER",
-    Callback = function()
-        setclipboard("https://discord.gg/dyHt2qbk")
-        toclipboard("https://discord.gg/dyHt2qbk")
-  end    
-})
-
-Dropdown:Set("Value")
-
-Tab:AddDropdown({
-	Name = "Dropdown",
-	Default = "None",
-	Options = {"Astro", "Shelly", "Pebble", "Sprout", "Vee"},
-	Callback = function(Value)
-		local args = {
-    [1] = "Value"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("EarnTutorialTower"):InvokeServer(unpack(args))
-	end    
-})
-
---[[
-Name = <string> - The name of the dropdown.
-Default = <string> - The default value of the dropdown.
-Options = <table> - The options in the dropdown.
-Callback = <function> - The function of the dropdown.
-]]
-
 Tab:AddButton({
-	Name = "Activate",
+	Name = "Discord server",
 	Callback = function()
-      		game:GetService("ReplicatedStorage"):WaitForChild("CheckTutorial"):InvokeServer()
+      		setclipboard("https://discord.gg/dyHt2qbk")
+        toclipboard("https://discord.gg/dyHt2qbk")
   	end    
 })
 
@@ -90,6 +61,5 @@ Tab:AddButton({
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
-
 
 OrionLib:Init()
